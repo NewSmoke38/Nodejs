@@ -30,3 +30,30 @@ const heroes = ["spiderman", "superman", "batman"] // reference type or non prim
  } // function is also a reference type
 
 console.log(typeof myFunction); // gives  object function 
+
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++ MEMORY +++++++++++++++++++++++++++++++++++++++++++++++
+
+// two types : stack and heap
+// stack(primitive) => means the variable declared is a copy of the orginal, heap (non-primitive) => changes happen in original.
+
+let myYoutubename = "newsmoke"
+
+let anothername = myYoutubename
+anothername = "shiva"
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+  name: "shiva",
+  email: "rdlnk@example.com"
+  
+} 
+
+let userTwo = userOne
+userTwo.email = "shiva@gmail"
+console.log(userOne);
+console.log(userTwo);
