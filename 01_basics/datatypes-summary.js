@@ -56,4 +56,4 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "shiva@gmail"
 console.log(userOne);
-console.log(userTwo);
+console.log(userTwo); // now both have same value which is shiva@gmail 
