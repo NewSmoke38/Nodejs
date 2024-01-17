@@ -32,3 +32,20 @@ console.log(newString); // gives "mew" cause we have asked it to give values on 
 const anotherString = gameName.slice(-8, 3); // same as substring but not divided and here we can put negative values too 
 console.log(anotherString); // gives "smok"
 
+
+const newStringOne = "  shiva  "
+console.log(newStringOne);
+console.log(newStringOne.trim()); // trim removed the empty space in the shiva string
+
+
+const url = "https://shiva.com/shiva%30deno"
+
+console.log(url.replace('%30', '-'))
+
+console.log(url.includes('fire')) // we are asking here that if there is word 'fire' in the url or not. it gives false. 
+
+
+
+// now we're changing our gamName string to array.
+
+console.log(gameName.split('-')) // it gives ["new", "smoke"]
