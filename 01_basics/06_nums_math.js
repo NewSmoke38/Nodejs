@@ -37,5 +37,16 @@ console.log(Math.max(4, 6, 2, -1, 9, 10, -5)); // gives 10
 console.log(Math.random()); // this gives a random number between 0 and 1. now if we want to get a random number between 0 and 10 then we can multiply it by 10. and so on
 console.log(Math.random() * 10); // gives random no. between 0 and 10
 
+// now what if the number comes 0??
+// to avoid that we can add 1 to it
+console.log((Math.random() * 10) + 1); // now it wont give 0 at any cost.
+
+// now i want the random no. from 10 to 20 and not 0 to 1 so ill write it like this =>
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min); // max - min + 1 is the range of numbers we want to generate and this is a formula. 
+
 
 
