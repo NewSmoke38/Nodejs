@@ -45,6 +45,3 @@ console.log("b ", myArr);
 const myn2 = myArr.splice(1, 3); // splice method takes the index of the array and removes the elements in between the index. means it works on the basis of index or boxes to remove the these under coming digits and print the rest but on the C array not on B array.
 console.log(myn2); // gives [4,5,6]
 console.log("c ", myArr);
-
-
-
