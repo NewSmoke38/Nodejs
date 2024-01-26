@@ -18,4 +18,18 @@ console.log(allHeroes); // addition{concat} of two arrays gives a new array.
 const all_new_heroes = [...marvel_heroes, ...anime_heroes] // spread operator
 console.log(all_new_heroes); // gets merged
 
-const another_array = [1,2,3, [4, 5, 6], 7, [6, 7[4, 5 ]]]
+const another_array = [1,2,3, [4, 5, 6], 7, [6, 7[4, 5 ]]] // rare situation
+
+const real_another_array = another_array.flat(Infinity) // flat method spreads them all nicely.
+console.log(real_another_array); 
+
+
+console.log(Array.isArray("Shiva")) // asked ki shiva string ek array hai kya? gives false
+console.log(Array.from("Shiva")) // makes shiva an array
+console.log(Array.from( {name: "Shiva"})) // gives empty array. {{{{INTERESTING}}}}
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3)); // gives an array of these values.
