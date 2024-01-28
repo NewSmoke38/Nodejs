@@ -34,6 +34,7 @@ console.log(typeof JsUser.mySym); // gives string which is wrong
 console.log(typeof JsUser[mySym]); // gives symbol this is correct form.
 
 //  how to change values in email. if you want nobody to change values for JsUserthe use freeze.
+JsUser.email = "qpmzj@example.com";
 
   
 
