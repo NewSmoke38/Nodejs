@@ -38,6 +38,8 @@ JsUser.email = "qpmzj@example.com";
 object.freeze(JsUser);
 JsUser.email = "qpmzj@hulu.com";
 console.log(JsUser.email); // this is not possible because of freeze.; no changes will happen
+ JsUser.greeting = function()
+
   
 
 
