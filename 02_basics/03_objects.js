@@ -35,7 +35,9 @@ console.log(typeof JsUser[mySym]); // gives symbol this is correct form.
 
 //  how to change values in email. if you want nobody to change values for JsUserthe use freeze.
 JsUser.email = "qpmzj@example.com";
-
+object.freeze(JsUser);
+JsUser.email = "qpmzj@hulu.com";
+console.log(JsUser.email); // this is not possible because of freeze.; no changes will happen
   
 
 
