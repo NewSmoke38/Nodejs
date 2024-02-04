@@ -2,7 +2,7 @@
 const tinderUser = new Object();
 // const tinderUser = {}; // both gives same answer
 
-tinderUser.id = "123abc";
+tinderUser.id = "123abc"; // key is id and value is 123abc
 tinderUser.name = "Jonas";
 tinderUser.isLoggedIn = false;
 
@@ -52,4 +52,21 @@ const users = [
 users[1].email;
 console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // gives all keys in the object.;
+console.log(Object.keys(tinderUser)); // gives all keys in the object.
+console.log(Object.values(tinderUser)); // gives all values in the object.
+console.log(Object.entries(tinderUser)); // gives all entries in the object. gives both value and key
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); // tells whether the key is present in the object or not. here it says true.
+
+
+// de structuring 
+
+const course = {
+  coursename: "js in hindi",
+  price: "999",
+  courseInstructor: "Jonas"
+}
+
+// course.courseInstructor   ab itna bada toh baar baar likhenge nhi toh isko aise likhenge. 
+const {courseInstructor: instructor} = course // aise mai kisi bhi key ka short name rkh skti hu.
+console.log(instructor);
