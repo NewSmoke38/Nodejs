@@ -70,3 +70,13 @@ const course = {
 // course.courseInstructor   ab itna bada toh baar baar likhenge nhi toh isko aise likhenge. 
 const {courseInstructor: instructor} = course // aise mai kisi bhi key ka short name rkh skti hu.
 console.log(instructor);
+
+// APIs come in Json code now.
+// here it is in object format but can come in others too.
+
+
+{
+  name: "Jonas",
+  coursename: "js in hindi",
+  price: "free",
+}
