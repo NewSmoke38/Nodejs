@@ -22,7 +22,20 @@ function addTwoNumbers(number1, number2){
   return number1 + number2;
 }
 
+const result = addTwoNumbers(1, 2);
+
 // addTwoNumbers(3, 5); // gives 8
 // addTwoNumbers(2, "q"); // gives 2q
-console.log("Result: ", result);
 
+console.log("Result: ", result); // result = 3
+
+
+function loginUserMessage(username){
+    if(username === undefined){
+    console.log("Please enter a username");
+    return
+    }
+    return `${username} just logged in`
+}
+// console.log(loginUserMessage("sam")); // couldve given it a name
+console.log(loginUserMessage());
