@@ -55,3 +55,19 @@ if(true) {
 
 
 //++++++++++++++++++++++++++++++++++++ INTERESTING +++++++++++++++++++++++++++++++++++++++
+
+// these are two different methods of functions we will be seeing in the coming time
+
+function addone(num){
+  return num + 1
+}
+
+addone(5) // call kiya addone ko and gave it value 5 
+
+
+
+addTwo(5) // acces krna // this is not right
+const addTwo = function(num){ // declare krna 
+  return num + 2
+}
+addTwo(5) // acces krna after declaration is right 
