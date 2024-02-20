@@ -24,7 +24,17 @@ console.log("temprature1 greater than 50"); // this will print cause it doesnt s
 // if i want to see ki inn dono console logs me se shio baat kya hai 
 const temperature2 = 30
 if (temperature2 === 30){
-  console.log("less than 50");
+  console.log("less than 50"); // this will print cause this it true
 } else {
-  console.log("temperature2 greater than 50");
+  console.log("temperature2 greater than 50"); // not this
 }
+
+const score = 300 
+
+if (score > 100){
+const power = "fly"
+console.log(`user power: ${power}`);
+}
+console.log(`User power: ${power};
+
+
