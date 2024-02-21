@@ -31,10 +31,48 @@ if (temperature2 === 30){
 
 const score = 300 
 
-if (score > 100){
-const power = "fly"
-console.log(`user power: ${power}`);
+if (score > 100) {
+  let power = "fly"
+  console.log(`user power: ${power}`);
 }
-console.log(`User power: ${power};
+console.log(`User power: ${power}`); // gives power undefined. thats good
+
+
+// shorthand notation(dont use it its unreadable)
+
+const balance = 7000 
+//if (balance > 200) console.log("test") , console.log("test2"); // never use
+
+
+
+// if i have to choose between many(multiple) conditions
+
+if (balance < 500) {
+  console.log("less than 500");
+} else if (balance < 1000) {
+  console.log("less than 1000");
+  
+} else if (balance < 2000) {
+  console.log( "less than 2000");
+  
+} else {
+  console.log("greater than 2000");
+}
+
+
+// real life practical
+
+const userLoggedIn = true
+const debitcard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (userLoggedIn && debitcard) {
+  console.log("Allow to buy course");
+}
+
+if (loggedInFromGoogle || loggedInFromEmail){
+  console.log("Allow user to buy");
+}
 
 
