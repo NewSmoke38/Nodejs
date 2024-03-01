@@ -67,12 +67,35 @@ const debitcard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if (userLoggedIn && debitcard) {
+if (userLoggedIn && debitcard && 3==2) {
   console.log("Allow to buy course");
-}
+} // and operator means allconditions should be true
 
 if (loggedInFromGoogle || loggedInFromEmail){
   console.log("Allow user to buy");
-}
+} // or operater means any one condition should be true then condition will be applied
+
+
+//  Nullish Coalescing Operator (??): null undefined
+
+let val1;
+val1 = 5 ?? 10 // database me aata hai ye. jo pehle aata hai wo assign hota hai
+val2 = null ?? 10    // gives 10
+val1 = undefined ?? 10    // gives 15
+val1 = null ?? undefined ?? 10    // gives 10
+val1 = null ?? 10 ?? 20 // gives 10
+
+console.log(val1); // gives 5
+
+
+
+// terniary operator{if else ka ek syntx hai}
+
+condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice >= 80 ? console.log("less than 80") : console.log("more than 80");
+
+
 
 
