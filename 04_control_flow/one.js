@@ -69,7 +69,7 @@ const loggedInFromEmail = true
 
 if (userLoggedIn && debitcard && 3==2) {
   console.log("Allow to buy course");
-} // and operator means allconditions should be true
+} // and operator means all conditions should be true
 
 if (loggedInFromGoogle || loggedInFromEmail){
   console.log("Allow user to buy");
